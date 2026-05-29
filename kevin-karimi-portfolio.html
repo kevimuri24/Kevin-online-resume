@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Muriuki Karimi — Technical Solutions & Customer Experience</title>
+  <meta name="description" content="Kevin Muriuki Karimi — Inside Sales Representative at Accenture. Bridging people, technology, and business outcomes through technical support, software development, and consultative selling." />
+  <meta property="og:title" content="Kevin Muriuki Karimi | Technical Solutions & Customer Experience" />
+  <meta property="og:description" content="Bridging people, technology, and business outcomes. Inside Sales at Accenture | Technical Support | Software Engineering | Project Management." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <style>
+    /* ============================================================
+       ART DIRECTION: Professional tech portfolio
+       Palette: Deep charcoal surfaces + warm amber accent
+       Typography: Cabinet Grotesk (display) + Satoshi (body)
+       Density: Spacious with editorial rhythm
+    ============================================================ */
+
+    :root, [data-theme="light"] {
+      --color-bg:               #f5f4f0;
+      --color-surface:          #f9f8f5;
+      --color-surface-2:        #ffffff;
+      --color-surface-offset:   #eeece7;
+      --color-surface-dynamic:  #e7e4de;
+      --color-divider:          #dcd9d3;
+      --color-border:           #d2cfc8;
+      --color-text:             #1a1814;
+      --color-text-muted:       #6b6a65;
+      --color-text-faint:       #b0afa9;
+      --color-text-inverse:     #f5f4f0;
+      --color-primary:          #d97706;
+      --color-primary-hover:    #b45309;
+      --color-primary-active:   #92400e;
+      --color-primary-highlight: #fef3c7;
+      --color-success:          #437a22;
+      --color-blue:             #006494;
+      --color-radius-sm: 0.375rem;
+      --radius-sm: 0.375rem;
+      --radius-md: 0.5rem;
+      --radius-lg: 0.75rem;
+      --radius-xl: 1rem;
+      --radius-2xl: 1.5rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px oklch(0.2 0.01 80 / 0.06);
+      --shadow-md: 0 4px 12px oklch(0.2 0.01 80 / 0.08);
+      --shadow-lg: 0 12px 32px oklch(0.2 0.01 80 / 0.12);
+      --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Cabinet Grotesk', 'Helvetica Neue', sans-serif;
+      --font-body: 'Satoshi', 'Inter', sans-serif;
+      --font-serif: 'Instrument Serif', Georgia, serif;
+      --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+      --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+      --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+      --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+      --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+      --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+      --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
+      --text-hero: clamp(3rem,     0.5rem  + 7vw,    7rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+      --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+      --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --content-narrow: 640px;
+      --content-default: 960px;
+      --content-wide: 1200px;
+    }
+
+    [data-theme="dark"] {
+      --color-bg:               #111110;
+      --color-surface:          #161614;
+      --color-surface-2:        #1c1b19;
+      --color-surface-offset:   #1f1e1b;
+      --color-surface-dynamic:  #2a2926;
+      --color-divider:          #242320;
+      --color-border:           #323028;
+      --color-text:             #e8e6e1;
+      --color-text-muted:       #787672;
+      --color-text-faint:       #4a4845;
+      --color-text-inverse:     #111110;
+      --color-primary:          #f59e0b;
+      --color-primary-hover:    #fbbf24;
+      --color-primary-active:   #fcd34d;
+      --color-primary-highlight: #2d2010;
+      --color-success:          #6daa45;
+      --color-blue:             #5591c7;
+      --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.25);
+      --shadow-md: 0 4px 12px oklch(0 0 0 / 0.35);
+      --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.5);
+    }
+
+    /* ── Base Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+    }
+    body {
+      min-height: 100dvh;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+    ul[role="list"], ol[role="list"] { list-style: none; }
+    input, button, textarea, select { font: inherit; color: inherit; }
+    h1,h2,h3,h4,h5,h6 { text-wrap: balance; line-height: 1.15; }
+    p, li, figcaption { text-wrap: pretty; max-width: 72ch; }
+    button { cursor: pointer; background: none; border: none; }
+    ::selection { background: oklch(from var(--color-primary) l c h / 0.25); }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    a, button, [role="button"] {
+      transition: color var(--transition-interactive), background var(--transition-interactive),
+                  border-color var(--transition-interactive), box-shadow var(--transition-interactive),
+                  opacity var(--transition-interactive);
+    }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border-width:0; }
+
+    /* ── Layout ── */
+    .container { max-width: var(--content-default); margin-inline: auto; padding-inline: var(--space-6); }
+    .container-wide { max-width: var(--content-wide); margin-inline: auto; padding-inline: var(--space-6); }
+
+    /* ── Skip Link ── */
+    .skip-link { position: fixed; top: -100%; left: var(--space-4); z-index: 1000; padding: var(--space-2) var(--space-4); background: var(--color-primary); color: var(--color-text-inverse); border-radius: var(--radius-md); font-size: var(--text-sm); font-weight: 600; text-decoration: none; }
+    .skip-link:focus { top: var(--space-4); }
+
+    /* ── Navigation ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: oklch(from var(--color-bg) l c h / 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--color-divider);
+      transition: background var(--transition-interactive);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-block: var(--space-4);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: var(--space-3);
+      text-decoration: none; color: var(--color-text);
+    }
+    .nav-logo-mark {
+      width: 36px; height: 36px; flex-shrink: 0;
+    }
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    .nav-logo-sub {
+      display: block;
+      font-size: var(--text-xs);
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: var(--space-6);
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none; font-size: var(--text-sm); font-weight: 500;
+      color: var(--color-text-muted);
+    }
+    .nav-links a:hover { color: var(--color-text); }
+    .nav-actions { display: flex; align-items: center; gap: var(--space-3); }
+    .btn-theme {
+      width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-full); color: var(--color-text-muted);
+      border: 1px solid var(--color-border);
+    }
+    .btn-theme:hover { color: var(--color-text); border-color: var(--color-text-muted); }
+    .btn-nav-cta {
+      padding: var(--space-2) var(--space-4);
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm); font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-nav-cta:hover { background: var(--color-primary-hover); }
+    .nav-hamburger { display: none; align-items: center; justify-content: center; width: 36px; height: 36px; color: var(--color-text-muted); }
+    @media (max-width: 768px) {
+      .nav-links, .btn-nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-3) var(--space-6);
+      font-size: var(--text-sm); font-weight: 600;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+    }
+    .btn-primary:hover { background: var(--color-primary-hover); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--color-text);
+      border: 1px solid var(--color-border);
+    }
+    .btn-ghost:hover { border-color: var(--color-text-muted); background: var(--color-surface); }
+
+    /* ── Section Spacing ── */
+    .section { padding-block: clamp(var(--space-16), 8vw, var(--space-24)); }
+    .section-label {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+    .section-label::before {
+      content: ''; display: block; width: 24px; height: 2px;
+      background: var(--color-primary); border-radius: 1px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--color-text);
+      margin-bottom: var(--space-4);
+    }
+    .section-subtitle {
+      font-size: var(--text-base);
+      color: var(--color-text-muted);
+      max-width: 55ch;
+      margin-bottom: var(--space-12);
+    }
+    .divider { width: 100%; height: 1px; background: var(--color-divider); }
+
+    /* ── Scroll Reveal ── */
+    .fade-in { opacity: 1; }
+    @supports (animation-timeline: scroll()) {
+      .fade-in {
+        opacity: 0;
+        animation: reveal-fade linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 70%;
+      }
+    }
+    @keyframes reveal-fade { to { opacity: 1; } }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    .hero {
+      min-height: 100dvh;
+      display: flex; align-items: center;
+      padding-top: 5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: radial-gradient(ellipse 80% 60% at 70% 50%,
+        oklch(from var(--color-primary) l c h / 0.06) 0%,
+        transparent 70%);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      border: 1px solid oklch(from var(--color-primary) l c h / 0.3);
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-8);
+    }
+    .hero-eyebrow-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--color-primary);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(0.85)} }
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: var(--text-hero);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      color: var(--color-text);
+      margin-bottom: var(--space-6);
+    }
+    .hero-name em {
+      font-style: italic;
+      font-family: var(--font-serif);
+      font-weight: 400;
+      color: var(--color-primary);
+    }
+    .hero-tagline {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 52ch;
+      margin-bottom: var(--space-8);
+      line-height: 1.55;
+    }
+    .hero-tagline strong { color: var(--color-text); font-weight: 600; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-12); }
+    .hero-stats {
+      display: flex; flex-wrap: wrap; gap: var(--space-8);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-divider);
+    }
+    .hero-stat-value {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 800;
+      color: var(--color-primary);
+      letter-spacing: -0.03em;
+    }
+    .hero-stat-label {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+      margin-top: var(--space-1);
+    }
+    .hero-scroll-hint {
+      position: absolute; bottom: var(--space-8); left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: var(--space-2);
+      color: var(--color-text-faint); font-size: var(--text-xs);
+      animation: bounce 2.5s ease-in-out infinite;
+    }
+    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+    /* ================================================================
+       ABOUT
+    ================================================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+      align-items: start;
+    }
+    .about-story { }
+    .about-story p {
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-5);
+      line-height: 1.75;
+    }
+    .about-story p strong { color: var(--color-text); }
+    .about-story p:first-of-type { font-size: var(--text-lg); color: var(--color-text); font-weight: 400; }
+    .about-highlights {
+      display: flex; flex-direction: column; gap: var(--space-5);
+    }
+    .highlight-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      transition: border-color var(--transition-interactive), box-shadow var(--transition-interactive);
+    }
+    .highlight-card:hover { border-color: var(--color-text-muted); box-shadow: var(--shadow-md); }
+    .highlight-icon {
+      width: 40px; height: 40px;
+      background: var(--color-primary-highlight);
+      border-radius: var(--radius-lg);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+    .highlight-title { font-family: var(--font-display); font-size: var(--text-base); font-weight: 700; margin-bottom: var(--space-1); }
+    .highlight-desc { font-size: var(--text-sm); color: var(--color-text-muted); }
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; gap: var(--space-10); }
+    }
+
+    /* ================================================================
+       SKILLS
+    ================================================================ */
+    .skills-bg { background: var(--color-surface); }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-4);
+    }
+    .skill-category {
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      transition: border-color var(--transition-interactive), transform var(--transition-interactive);
+    }
+    .skill-category:hover { border-color: var(--color-primary); transform: translateY(-2px); }
+    .skill-cat-header {
+      display: flex; align-items: center; gap: var(--space-3);
+      margin-bottom: var(--space-5);
+    }
+    .skill-cat-icon {
+      width: 36px; height: 36px; border-radius: var(--radius-lg);
+      background: var(--color-primary-highlight);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-primary); flex-shrink: 0;
+    }
+    .skill-cat-name { font-family: var(--font-display); font-size: var(--text-base); font-weight: 700; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .skill-tag {
+      padding: var(--space-1) var(--space-3);
+      background: var(--color-surface-offset);
+      color: var(--color-text-muted);
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs); font-weight: 500;
+      border: 1px solid var(--color-divider);
+    }
+    .skill-tag.accent { background: var(--color-primary-highlight); color: var(--color-primary); border-color: oklch(from var(--color-primary) l c h / 0.25); }
+
+    /* ================================================================
+       EXPERIENCE
+    ================================================================ */
+    .timeline { position: relative; }
+    .timeline::before {
+      content: '';
+      position: absolute; left: 20px; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(to bottom, var(--color-primary), var(--color-divider));
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: var(--space-5);
+      margin-bottom: var(--space-10);
+    }
+    .timeline-dot {
+      width: 42px; height: 42px;
+      border-radius: var(--radius-full);
+      background: var(--color-surface);
+      border: 2px solid var(--color-primary);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; position: relative; z-index: 1;
+      color: var(--color-primary);
+    }
+    .timeline-dot.current {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+    }
+    .timeline-body {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      transition: border-color var(--transition-interactive);
+    }
+    .timeline-body:hover { border-color: var(--color-primary); }
+    .timeline-meta {
+      display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2);
+      margin-bottom: var(--space-3);
+    }
+    .timeline-badge {
+      font-size: var(--text-xs); font-weight: 600;
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+    }
+    .timeline-date { font-size: var(--text-xs); color: var(--color-text-muted); margin-left: auto; }
+    .timeline-role { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; margin-bottom: var(--space-1); }
+    .timeline-company { font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-4); }
+    .timeline-bullets { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+    .timeline-bullets li {
+      font-size: var(--text-sm); color: var(--color-text-muted); padding-left: var(--space-5); position: relative; max-width: 72ch;
+    }
+    .timeline-bullets li::before {
+      content: ''; position: absolute; left: 0; top: 0.6em;
+      width: 8px; height: 2px; background: var(--color-primary); border-radius: 1px;
+    }
+
+    /* ================================================================
+       PROJECTS
+    ================================================================ */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
+      gap: var(--space-6);
+    }
+    .project-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      display: flex; flex-direction: column;
+      transition: border-color var(--transition-interactive), transform var(--transition-interactive), box-shadow var(--transition-interactive);
+    }
+    .project-card:hover { border-color: var(--color-primary); transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .project-card-header {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      margin-bottom: var(--space-4);
+    }
+    .project-icon {
+      width: 48px; height: 48px;
+      background: var(--color-primary-highlight);
+      border-radius: var(--radius-lg);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-primary);
+    }
+    .project-type {
+      font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.05em;
+      text-transform: uppercase; color: var(--color-text-faint);
+    }
+    .project-title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; margin-bottom: var(--space-2); }
+    .project-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; margin-bottom: var(--space-5); flex: 1; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
+    .project-footer { display: flex; gap: var(--space-3); margin-top: auto; }
+    .btn-sm {
+      display: inline-flex; align-items: center; gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      font-size: var(--text-xs); font-weight: 600;
+      border-radius: var(--radius-full); text-decoration: none;
+    }
+    .btn-sm-primary { background: var(--color-primary); color: var(--color-text-inverse); }
+    .btn-sm-primary:hover { background: var(--color-primary-hover); }
+    .btn-sm-outline { border: 1px solid var(--color-border); color: var(--color-text-muted); }
+    .btn-sm-outline:hover { border-color: var(--color-text-muted); color: var(--color-text); }
+
+    /* ================================================================
+       VALUE PROPOSITION
+    ================================================================ */
+    .value-bg { background: var(--color-surface); }
+    .value-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-16); align-items: center;
+    }
+    .value-quote {
+      font-family: var(--font-serif);
+      font-size: var(--text-2xl);
+      color: var(--color-text);
+      line-height: 1.3;
+      margin-bottom: var(--space-8);
+    }
+    .value-quote em { color: var(--color-primary); font-style: italic; }
+    .value-pillars { display: flex; flex-direction: column; gap: var(--space-4); }
+    .value-pillar {
+      display: flex; align-items: flex-start; gap: var(--space-4);
+      padding: var(--space-5);
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+    }
+    .value-pillar-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      border-radius: var(--radius-lg);
+      background: var(--color-primary-highlight);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-primary);
+    }
+    .value-pillar-text strong { display: block; font-size: var(--text-sm); font-weight: 700; margin-bottom: var(--space-1); }
+    .value-pillar-text span { font-size: var(--text-sm); color: var(--color-text-muted); }
+    @media (max-width: 768px) {
+      .value-inner { grid-template-columns: 1fr; gap: var(--space-10); }
+    }
+
+    /* ================================================================
+       TESTIMONIALS
+    ================================================================ */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+      gap: var(--space-5);
+    }
+    .testimonial-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+    }
+    .testimonial-stars { color: var(--color-primary); font-size: var(--text-sm); margin-bottom: var(--space-4); }
+    .testimonial-quote { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; margin-bottom: var(--space-5); font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: var(--space-3); }
+    .testimonial-avatar {
+      width: 40px; height: 40px; border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: var(--text-sm); font-weight: 700;
+      color: var(--color-primary); flex-shrink: 0;
+    }
+    .testimonial-name { font-size: var(--text-sm); font-weight: 700; }
+    .testimonial-title { font-size: var(--text-xs); color: var(--color-text-muted); }
+
+    /* ================================================================
+       CONTACT
+    ================================================================ */
+    .contact-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--space-16); align-items: start;
+    }
+    .contact-cta-text { font-size: var(--text-lg); color: var(--color-text-muted); margin-bottom: var(--space-8); line-height: 1.65; }
+    .contact-links { display: flex; flex-direction: column; gap: var(--space-4); }
+    .contact-link {
+      display: flex; align-items: center; gap: var(--space-4);
+      padding: var(--space-4) var(--space-5);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      text-decoration: none; color: var(--color-text);
+      transition: border-color var(--transition-interactive), transform var(--transition-interactive);
+    }
+    .contact-link:hover { border-color: var(--color-primary); transform: translateX(4px); }
+    .contact-link-icon {
+      width: 40px; height: 40px; flex-shrink: 0;
+      background: var(--color-primary-highlight);
+      border-radius: var(--radius-lg);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--color-primary);
+    }
+    .contact-link-label { font-size: var(--text-xs); color: var(--color-text-muted); }
+    .contact-link-value { font-size: var(--text-sm); font-weight: 600; }
+    .contact-form {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-8);
+    }
+    .form-group { margin-bottom: var(--space-5); }
+    .form-label { display: block; font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-2); }
+    .form-input, .form-textarea {
+      width: 100%; padding: var(--space-3) var(--space-4);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      font-size: var(--text-sm); color: var(--color-text);
+      transition: border-color var(--transition-interactive), box-shadow var(--transition-interactive);
+    }
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px oklch(from var(--color-primary) l c h / 0.15);
+    }
+    .form-textarea { resize: vertical; min-height: 120px; }
+    @media (max-width: 768px) {
+      .contact-inner { grid-template-columns: 1fr; gap: var(--space-10); }
+    }
+
+    /* ================================================================
+       FOOTER
+    ================================================================ */
+    .footer {
+      border-top: 1px solid var(--color-divider);
+      padding-block: var(--space-8);
+    }
+    .footer-inner {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: var(--space-4);
+    }
+    .footer-copy { font-size: var(--text-xs); color: var(--color-text-muted); }
+    .footer-links { display: flex; gap: var(--space-5); }
+    .footer-links a { font-size: var(--text-xs); color: var(--color-text-muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--color-text); }
+
+    /* ── Mobile Nav Overlay ── */
+    .mobile-nav {
+      display: none; position: fixed; inset: 0; z-index: 99;
+      background: var(--color-bg);
+      padding: var(--space-20) var(--space-6) var(--space-8);
+      flex-direction: column; gap: var(--space-4);
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav-link {
+      font-family: var(--font-display); font-size: var(--text-xl);
+      font-weight: 700; color: var(--color-text-muted); text-decoration: none;
+      padding-block: var(--space-3);
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .mobile-nav-link:hover { color: var(--color-primary); }
+    .mobile-nav-close {
+      position: absolute; top: var(--space-5); right: var(--space-5);
+      width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+      color: var(--color-text-muted); border-radius: var(--radius-full);
+      border: 1px solid var(--color-border);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i data-lucide="x" width="18" height="18"></i>
+    </button>
+    <a href="#hero" class="mobile-nav-link" onclick="closeMobileNav()">Home</a>
+    <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()">About</a>
+    <a href="#skills" class="mobile-nav-link" onclick="closeMobileNav()">Skills</a>
+    <a href="#experience" class="mobile-nav-link" onclick="closeMobileNav()">Experience</a>
+    <a href="#projects" class="mobile-nav-link" onclick="closeMobileNav()">Projects</a>
+    <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Contact</a>
+  </nav>
+
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <div class="container-wide">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Kevin Muriuki Karimi — Home">
+          <!-- Logo Mark -->
+          <svg class="nav-logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="var(--color-primary)" opacity="0.15"/>
+            <text x="18" y="25" text-anchor="middle" font-family="'Cabinet Grotesk', sans-serif"
+                  font-size="18" font-weight="800" fill="var(--color-primary)">K</text>
+          </svg>
+          <div class="nav-logo-text">
+            Kevin Karimi
+            <span class="nav-logo-sub">Technical Solutions</span>
+          </div>
+        </a>
+        <nav role="navigation" aria-label="Primary">
+          <ul class="nav-links" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-theme" id="theme-toggle" data-theme-toggle aria-label="Switch theme">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <a href="#contact" class="btn-nav-cta">Let's Connect</a>
+          <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+            <i data-lucide="menu" width="20" height="20"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero section" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-dot"></span>
+            Available for new opportunities · Ottawa, Canada
+          </div>
+          <h1 class="hero-name">
+            Kevin<br>Muriuki <em>Karimi</em>
+          </h1>
+          <p class="hero-tagline">
+            <strong>Turning technical complexity into clear business outcomes.</strong>
+            Inside Sales at Accenture · Technical Support · Software Engineering · Project Leadership across Kenya and Canada.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="folder-open" width="16" height="16"></i>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i data-lucide="mail" width="16" height="16"></i>
+              Get In Touch
+            </a>
+            <a href="https://www.linkedin.com/in/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+              <i data-lucide="linkedin" width="16" height="16"></i>
+              LinkedIn
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-value">8+</div>
+              <div class="hero-stat-label">Years of experience</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">10K+</div>
+              <div class="hero-stat-label">Students reached via training</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">150+</div>
+              <div class="hero-stat-label">B2B engagements conducted</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">40%</div>
+              <div class="hero-stat-label">Enrollment uplift delivered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <i data-lucide="chevrons-down" width="16" height="16"></i>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid fade-in">
+          <div class="about-story">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Bridging people, technology, and business outcomes</h2>
+            <p>
+              I'm a tech-driven professional who has built my career at the intersection of <strong>technical delivery</strong> and <strong>human communication</strong>. From managing digital literacy programmes reaching 10,000+ students in Kenya, to consultative sales at Accenture in Ottawa — I bring both the technical depth and the business fluency to drive results.
+            </p>
+            <p>
+              My background spans <strong>Windows/macOS/Linux support</strong>, <strong>Azure and Microsoft 365 environments</strong>, <strong>React and Node.js development</strong>, and <strong>project coordination</strong> across education, non-profit, and enterprise sectors. I completed a rigorous <strong>9-month full-stack engineering bootcamp</strong> at Moringa School (Flatiron curriculum) and hold a BSc in Computer Science from Unicaf University.
+            </p>
+            <p>
+              What sets me apart is my ability to translate what is technically complex into language that stakeholders actually act on — whether that's a recruiter, a client, an educator, or a developer. That skill, refined across Kenya and Canada, is what drives me in my current Inside Sales role at Accenture.
+            </p>
+            <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6);flex-wrap:wrap;">
+              <a href="#experience" class="btn btn-primary">See My Experience</a>
+              <a href="mailto:kevimuri24@gmail.com" class="btn btn-ghost">Email Me</a>
+            </div>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="zap" width="18" height="18"></i></div>
+              <div class="highlight-title">Technical Adaptability</div>
+              <div class="highlight-desc">Comfortable across Windows, macOS, Linux; Azure, SharePoint, Teams, Active Directory, and full-stack web development using React, Node.js, and Git.</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="users" width="18" height="18"></i></div>
+              <div class="highlight-title">Customer Empathy</div>
+              <div class="highlight-desc">From helpdesk support to enterprise B2B outreach, I listen first — then craft solutions that speak to what people actually need, not just what they asked for.</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="globe" width="18" height="18"></i></div>
+              <div class="highlight-title">International Experience</div>
+              <div class="highlight-desc">Worked across Kenya and Canada with government agencies, non-profits, universities, SMBs, and enterprise clients like Accenture and Carleton University.</div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon"><i data-lucide="trending-up" width="18" height="18"></i></div>
+              <div class="highlight-title">Fast Learner & Growth Mindset</div>
+              <div class="highlight-desc">Completed a full-stack bootcamp while working, pursuing a CS degree, and building freelance projects — consistently delivering in parallel tracks.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SKILLS -->
+    <section class="section skills-bg" id="skills">
+      <div class="container">
+        <span class="section-label fade-in">Skills & Expertise</span>
+        <h2 class="section-title fade-in">What I bring to the table</h2>
+        <p class="section-subtitle fade-in">A cross-functional skill set built across support, development, sales, and delivery roles.</p>
+        <div class="skills-grid fade-in">
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i data-lucide="monitor" width="18" height="18"></i></div>
+              <div class="skill-cat-name">Technical Support</div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">Windows 10/11</span>
+              <span class="skill-tag accent">macOS</span>
+              <span class="skill-tag accent">Linux</span>
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">Microsoft 365</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">SharePoint</span>
+              <span class="skill-tag">Teams</span>
+              <span class="skill-tag">TeamViewer</span>
+              <span class="skill-tag">Network Basics</span>
+              <span class="skill-tag">Troubleshooting</span>
+              <span class="skill-tag">Hardware Repair</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i data-lucide="code-2" width="18" height="18"></i></div>
+              <div class="skill-cat-name">Software Development</div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag accent">JavaScript</span>
+              <span class="skill-tag accent">Node.js</span>
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Raspberry Pi</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i data-lucide="bar-chart-2" width="18" height="18"></i></div>
+              <div class="skill-cat-name">Business & Sales</div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">Consultative Selling</span>
+              <span class="skill-tag accent">Discovery Calls</span>
+              <span class="skill-tag">Salesforce CRM</span>
+              <span class="skill-tag">B2B Outreach</span>
+              <span class="skill-tag">Pipeline Management</span>
+              <span class="skill-tag">Stakeholder Engagement</span>
+              <span class="skill-tag">Value Propositions</span>
+              <span class="skill-tag">Client Onboarding</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i data-lucide="layers" width="18" height="18"></i></div>
+              <div class="skill-cat-name">Project & Operations</div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">Project Coordination</span>
+              <span class="skill-tag">Curriculum Development</span>
+              <span class="skill-tag">Training Delivery</span>
+              <span class="skill-tag">Documentation</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Google Workspace</span>
+              <span class="skill-tag">Process Improvement</span>
+              <span class="skill-tag">Agile / Scrum</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i data-lucide="globe-2" width="18" height="18"></i></div>
+              <div class="skill-cat-name">Languages</div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">English (Bilingual)</span>
+              <span class="skill-tag accent">Swahili (Native)</span>
+              <span class="skill-tag">Spanish (Elementary)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i data-lucide="award" width="18" height="18"></i></div>
+              <div class="skill-cat-name">Certifications</div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag accent">Full-Stack Bootcamp</span>
+              <span class="skill-tag">Project Mgmt (edX)</span>
+              <span class="skill-tag">Business Presentations</span>
+              <span class="skill-tag">Teamwork Foundations</span>
+              <span class="skill-tag">ISTE Kickoff</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <span class="section-label fade-in">Career Timeline</span>
+        <h2 class="section-title fade-in">Experience that spans industries</h2>
+        <p class="section-subtitle fade-in">From data processing in Kenya to consultative sales at a global consulting firm in Ottawa — every role added a layer.</p>
+
+        <div class="timeline fade-in">
+
+          <div class="timeline-item">
+            <div class="timeline-dot current" aria-label="Current role">
+              <i data-lucide="briefcase" width="18" height="18"></i>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-badge">Current</span>
+                <span class="timeline-date">March 2026 – Present · Ottawa, ON</span>
+              </div>
+              <div class="timeline-role">Inside Sales Representative</div>
+              <div class="timeline-company">Accenture</div>
+              <ul class="timeline-bullets">
+                <li>Support business development through consultative sales, qualifying leads and aligning technical solutions to client business challenges.</li>
+                <li>Bridge technical and business conversations, translating complex technical concepts into clear, outcome-focused language for client stakeholders.</li>
+                <li>Collaborate with internal teams on opportunity qualification, discovery, and early-stage solution alignment in a customer-centric enterprise environment.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i data-lucide="monitor-check" width="18" height="18"></i></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">Oct 2024 – Jun 2025 · Ottawa, ON</span>
+              </div>
+              <div class="timeline-role">Technical Support Specialist (COMAS)</div>
+              <div class="timeline-company">Carleton University</div>
+              <ul class="timeline-bullets">
+                <li>Troubleshot student sessions during high-volume exam registration periods, ensuring continuity across Windows, macOS, and Linux environments.</li>
+                <li>Manually verified student exam records via SharePoint, Teams, and Azure — maintaining data accuracy under time-sensitive conditions.</li>
+                <li>Served as backup technical support during exam sessions for faculty and administration.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i data-lucide="graduation-cap" width="18" height="18"></i></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">Aug 2022 – Dec 2024 · Remote</span>
+              </div>
+              <div class="timeline-role">EdTech Project Manager</div>
+              <div class="timeline-company">Team4Tech (Kenya/Remote)</div>
+              <ul class="timeline-bullets">
+                <li>Trained 200+ educators in Machakos, Kenya using a train-the-trainer model to launch coding clubs in primary schools.</li>
+                <li>Deployed 20+ Raspberry Pi digital literacy kits, reaching over 10,000 students in the Wamunyu community.</li>
+                <li>Designed and facilitated digital literacy training programmes combining on-site and virtual delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i data-lucide="code" width="18" height="18"></i></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2015 – Dec 2024 · Remote (Freelance)</span>
+              </div>
+              <div class="timeline-role">Software Developer & Technical Support</div>
+              <div class="timeline-company">Upwork</div>
+              <ul class="timeline-bullets">
+                <li>Developed and maintained responsive websites for global clients, improving engagement and user experience.</li>
+                <li>Provided ongoing technical support and hardware/software maintenance for Windows, macOS, and mobile devices.</li>
+                <li>Maintained high client satisfaction through reliable support and continuous improvement over a decade of freelance work.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i data-lucide="users" width="18" height="18"></i></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">Oct 2021 – Aug 2022 · Nairobi & Mombasa, Kenya</span>
+              </div>
+              <div class="timeline-role">Program Associate</div>
+              <div class="timeline-company">STEM Impact Center Kenya</div>
+              <ul class="timeline-bullets">
+                <li>Executed B2B outreach to 150+ schools and employers, presenting value propositions and securing enrolment through consultative selling.</li>
+                <li>Improved enrolment conversion by 40% through streamlined onboarding and targeted follow-up.</li>
+                <li>Maintained accurate CRM records to support pipeline tracking and reporting.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"><i data-lucide="building-2" width="18" height="18"></i></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">Sep 2018 – Sep 2021 · Nairobi, Kenya</span>
+              </div>
+              <div class="timeline-role">Project Manager / Technical Lead</div>
+              <div class="timeline-company">Class Measures Ltd</div>
+              <ul class="timeline-bullets">
+                <li>Led B2B sales across schools, government, and private organisations, securing contracts through needs-based consultative selling.</li>
+                <li>Developed digital marketing strategies, curriculum content for Python and Scratch, and hardware maintenance on Linux (pi-top) systems.</li>
+                <li>Conducted market research, stakeholder workshops, and training sessions to communicate value propositions.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section skills-bg" id="projects">
+      <div class="container">
+        <span class="section-label fade-in">Featured Work</span>
+        <h2 class="section-title fade-in">Projects & Portfolio</h2>
+        <p class="section-subtitle fade-in">Real-world deliverables and prioritised builds that demonstrate my technical and business capabilities.</p>
+        <div class="projects-grid fade-in">
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i data-lucide="layout-dashboard" width="22" height="22"></i></div>
+              <span class="project-type">In Progress</span>
+            </div>
+            <h3 class="project-title">Helpdesk Ticket Dashboard</h3>
+            <p class="project-desc">A React-based support ticket management dashboard with status tracking, priority filtering, and resolution notes. Built to simulate real IT helpdesk environments and demonstrate technical support process knowledge.</p>
+            <div class="project-tech">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">CSS Grid</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer" class="btn-sm btn-sm-outline">
+                <i data-lucide="github" width="13" height="13"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i data-lucide="search" width="22" height="22"></i></div>
+              <span class="project-type">Planned</span>
+            </div>
+            <h3 class="project-title">Customer Discovery CRM</h3>
+            <p class="project-desc">A lightweight CRM dashboard for tracking B2B discovery calls, prospect notes, deal stages, and follow-up reminders — inspired by my Accenture sales workflow and STEM Impact Center pipeline work.</p>
+            <div class="project-tech">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag">Salesforce API</span>
+              <span class="skill-tag">Tailwind</span>
+              <span class="skill-tag">Framer Motion</span>
+            </div>
+            <div class="project-footer">
+              <span class="btn-sm btn-sm-outline" style="cursor:default;opacity:0.6;">Coming soon</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i data-lucide="book-open" width="22" height="22"></i></div>
+              <span class="project-type">Planned</span>
+            </div>
+            <h3 class="project-title">IT Troubleshooting Knowledge Base</h3>
+            <p class="project-desc">A searchable knowledge base of real-world IT support scenarios covering Windows, macOS, Linux, Active Directory, and Microsoft 365 — drawn from hands-on support experience at Carleton University and via Upwork.</p>
+            <div class="project-tech">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag">Markdown</span>
+              <span class="skill-tag">Search UI</span>
+              <span class="skill-tag">GitHub Pages</span>
+            </div>
+            <div class="project-footer">
+              <span class="btn-sm btn-sm-outline" style="cursor:default;opacity:0.6;">Coming soon</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i data-lucide="wifi" width="22" height="22"></i></div>
+              <span class="project-type">Live</span>
+            </div>
+            <h3 class="project-title">Digital Literacy Platform</h3>
+            <p class="project-desc">Web resources developed in support of the Team4Tech coding clubs programme. Includes curriculum guides, instructor materials, and learner portals for Raspberry Pi-based digital literacy education in Kenya.</p>
+            <div class="project-tech">
+              <span class="skill-tag accent">HTML/CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">Train-the-Trainer</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer" class="btn-sm btn-sm-outline">
+                <i data-lucide="github" width="13" height="13"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i data-lucide="globe" width="22" height="22"></i></div>
+              <span class="project-type">Freelance</span>
+            </div>
+            <h3 class="project-title">Client Websites (Upwork)</h3>
+            <p class="project-desc">10+ years of responsive website delivery for global clients — custom front-ends, e-commerce templates, landing pages, and ongoing maintenance and technical support. Achieved consistent high-satisfaction ratings.</p>
+            <div class="project-tech">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://www.upwork.com" target="_blank" rel="noopener noreferrer" class="btn-sm btn-sm-outline">
+                <i data-lucide="external-link" width="13" height="13"></i> Upwork
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon"><i data-lucide="presentation" width="22" height="22"></i></div>
+              <span class="project-type">Planned</span>
+            </div>
+            <h3 class="project-title">SaaS Landing Page Showcase</h3>
+            <p class="project-desc">A collection of polished SaaS landing page templates targeting different verticals — built to demonstrate front-end design skills, conversion UX patterns, and technical execution for enterprise-facing products.</p>
+            <div class="project-tech">
+              <span class="skill-tag accent">React</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Framer Motion</span>
+              <span class="skill-tag">Vite</span>
+            </div>
+            <div class="project-footer">
+              <span class="btn-sm btn-sm-outline" style="cursor:default;opacity:0.6;">Coming soon</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPOSITION -->
+    <section class="section" id="value">
+      <div class="container">
+        <div class="value-inner fade-in">
+          <div>
+            <span class="section-label">Why Kevin</span>
+            <blockquote class="value-quote">
+              "I don't just support technology — I help people <em>use it</em> to move their business forward."
+            </blockquote>
+            <p style="color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.75;max-width:50ch;">
+              Whether I'm qualifying an enterprise opportunity at Accenture, troubleshooting an exam registration system at Carleton, or teaching coding to students in rural Kenya — the through-line is always the same: make complex things accessible, and drive measurable outcomes.
+            </p>
+          </div>
+          <div class="value-pillars">
+            <div class="value-pillar">
+              <div class="value-pillar-icon"><i data-lucide="cpu" width="18" height="18"></i></div>
+              <div class="value-pillar-text">
+                <strong>Technical Depth</strong>
+                <span>OS-level support, Azure infrastructure, full-stack development, and hardware expertise across enterprise environments.</span>
+              </div>
+            </div>
+            <div class="value-pillar">
+              <div class="value-pillar-icon"><i data-lucide="message-circle" width="18" height="18"></i></div>
+              <div class="value-pillar-text">
+                <strong>Business Communication</strong>
+                <span>Translating technical complexity into plain-language business value for executives, clients, and end users.</span>
+              </div>
+            </div>
+            <div class="value-pillar">
+              <div class="value-pillar-icon"><i data-lucide="heart" width="18" height="18"></i></div>
+              <div class="value-pillar-text">
+                <strong>Customer Empathy</strong>
+                <span>8+ years of customer-facing work — from helpdesk and training to enterprise B2B sales — always people-first.</span>
+              </div>
+            </div>
+            <div class="value-pillar">
+              <div class="value-pillar-icon"><i data-lucide="refresh-cw" width="18" height="18"></i></div>
+              <div class="value-pillar-text">
+                <strong>Adaptability & Growth</strong>
+                <span>Continuously upskilling: bootcamp-trained, degree in progress, and actively growing in enterprise SaaS sales.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- TESTIMONIALS -->
+    <section class="section skills-bg" id="testimonials">
+      <div class="container">
+        <span class="section-label fade-in">Endorsements</span>
+        <h2 class="section-title fade-in">What colleagues say</h2>
+        <div class="testimonials-grid fade-in">
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">"Kevin has an exceptional ability to bridge technical and business conversations. He listens carefully, identifies the real problem, and communicates solutions in a way that drives action."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S.M</div>
+              <div>
+                <div class="testimonial-name">Sales Lead</div>
+                <div class="testimonial-title">Enterprise Tech Organisation, Ottawa</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">"Kevin's training programme transformed how our educators use technology. He arrived prepared, adapted on the fly, and left behind resources our team still uses daily."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A.K</div>
+              <div>
+                <div class="testimonial-name">Programme Director</div>
+                <div class="testimonial-title">EdTech Non-Profit, Kenya</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">"Reliable, fast, and always professional. Kevin maintained our website for over a year and proactively flagged issues before they became problems. I'd work with him again without hesitation."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J.O</div>
+              <div>
+                <div class="testimonial-name">Business Owner</div>
+                <div class="testimonial-title">Freelance Client, Upwork</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <span class="section-label fade-in">Get In Touch</span>
+        <h2 class="section-title fade-in">Let's build something together</h2>
+        <div class="contact-inner fade-in">
+          <div>
+            <p class="contact-cta-text">
+              Whether you're a recruiter, a technical team, or a business looking for someone who can <strong>bridge technical depth and business communication</strong> — I'd love to connect. I'm open to roles in IT Support, Solutions Engineering, Sales Engineering, Front-End Development, and Technical Project Coordination.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:kevimuri24@gmail.com" class="contact-link">
+                <div class="contact-link-icon"><i data-lucide="mail" width="18" height="18"></i></div>
+                <div>
+                  <div class="contact-link-label">Email</div>
+                  <div class="contact-link-value">kevimuri24@gmail.com</div>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <div class="contact-link-icon"><i data-lucide="linkedin" width="18" height="18"></i></div>
+                <div>
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-value">linkedin.com/in/kevinmuriukikarimi</div>
+                </div>
+              </a>
+              <a href="https://github.com/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <div class="contact-link-icon"><i data-lucide="github" width="18" height="18"></i></div>
+                <div>
+                  <div class="contact-link-label">GitHub</div>
+                  <div class="contact-link-value">github.com/kevinmuriukikarimi</div>
+                </div>
+              </a>
+              <div class="contact-link" style="cursor:default;">
+                <div class="contact-link-icon"><i data-lucide="map-pin" width="18" height="18"></i></div>
+                <div>
+                  <div class="contact-link-label">Location</div>
+                  <div class="contact-link-value">Ottawa, Ontario, Canada</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" onsubmit="handleFormSubmit(event)" novalidate>
+            <h3 style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-6);">Send me a message</h3>
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your name</label>
+              <input class="form-input" id="contact-name" type="text" placeholder="Jane Smith" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email address</label>
+              <input class="form-input" id="contact-email" type="email" placeholder="jane@company.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input class="form-input" id="contact-subject" type="text" placeholder="IT Support role — Acme Corp" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea class="form-textarea" id="contact-message" placeholder="Tell me about the opportunity or project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i data-lucide="send" width="16" height="16"></i>
+              Send Message
+            </button>
+            <p id="form-feedback" style="display:none;margin-top:var(--space-4);font-size:var(--text-sm);color:var(--color-success);text-align:center;"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-inner">
+        <div class="footer-copy">
+          &copy; 2026 Kevin Muriuki Karimi · Ottawa, Canada ·
+          <span style="color:var(--color-primary);">Technical Solutions & Customer Experience</span>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:kevimuri24@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/kevinmuriukikarimi" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="#hero">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Theme toggle
+    (function(){
+      const t = document.querySelector('[data-theme-toggle]');
+      const r = document.documentElement;
+      let d = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      r.setAttribute('data-theme', d);
+      if (t) {
+        t.addEventListener('click', () => {
+          d = d === 'dark' ? 'light' : 'dark';
+          r.setAttribute('data-theme', d);
+          t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+          t.innerHTML = d === 'dark'
+            ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+            : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+        });
+      }
+    })();
+
+    // Mobile Nav
+    const hamburger = document.getElementById('nav-hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileClose = document.getElementById('mobile-nav-close');
+    function openMobileNav() {
+      mobileNav.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger && hamburger.addEventListener('click', openMobileNav);
+    mobileClose && mobileClose.addEventListener('click', closeMobileNav);
+    mobileNav && mobileNav.addEventListener('click', e => { if (e.target === mobileNav) closeMobileNav(); });
+
+    // Contact form (mailto fallback)
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const subject = document.getElementById('contact-subject').value || 'Portfolio Contact';
+      const message = document.getElementById('contact-message').value;
+      const body = `Name: ${name}%0AEmail: ${email}%0A%0A${encodeURIComponent(message)}`;
+      window.location.href = `mailto:kevimuri24@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      const feedback = document.getElementById('form-feedback');
+      feedback.textContent = '✓ Opening your email client...';
+      feedback.style.display = 'block';
+    }
+
+    // Init Lucide icons
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) lucide.createIcons();
+    });
+    window.addEventListener('load', () => {
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
